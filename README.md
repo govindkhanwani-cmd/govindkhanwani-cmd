@@ -14,7 +14,7 @@ I'm a First-Year Computer Engineering student at VESIT, Mumbai, passionate about
 
 ### 📬 Connect with Me
 - **LinkedIn:** [Govind Khanwani](https://www.linkedin.com/in/your-linkedin-handle)
-- **Email:** your-email@gmail.com## Hi there 👋
+- **Email:** govindkhanwani@gmail.com# Hi there 👋
 
 <!--
 **govindkhanwani-cmd/govindkhanwani-cmd** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
