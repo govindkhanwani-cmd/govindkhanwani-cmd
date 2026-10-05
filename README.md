@@ -3,12 +3,11 @@
 I'm a First-Year Computer Engineering student at VESIT, Mumbai, passionate about software development, problem-solving, and building cool projects.
 
 ### 🛠️ Tech Stack & Skills
-- **Languages:** C++, C, Java
-- **Web Development:** HTML5, CSS3, JavaScript
-- **Tools & Environments:** VS Code, Git, GitHub, Linux (WSL)
+- **Languages:** C(basics), JAVA(learning)
+- **Web Development:** HTML(basics)
+- **Tools & Environments:** VS Code, Git, GitHub
 
 ### 📌 What I'm Currently Working On
-- 🚀 Practicing Data Structures & Algorithms in C++
 - 💻 Building web applications & mini-projects
 - 🎯 Participating in hackathons and coding challenges
 
