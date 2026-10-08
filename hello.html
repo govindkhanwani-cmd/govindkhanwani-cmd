@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11112b">
+  <title>Hello, there!</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+      background: #11112b;
+      color: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 18% 22%, rgb(114 75 255 / 28%), transparent 38%),
+        radial-gradient(ellipse at 82% 78%, rgb(255 91 168 / 22%), transparent 36%),
+        #11112b;
+    }
+
+    .glow {
+      position: fixed;
+      width: 24rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: #8b5cf6;
+      filter: blur(110px);
+      opacity: 0.24;
+      animation: drift 12s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+
+    .card {
+      position: relative;
+      width: min(90vw, 660px);
+      padding: clamp(3rem, 9vw, 6.5rem) 2rem;
+      overflow: hidden;
+      border: 1px solid rgb(255 255 255 / 16%);
+      border-radius: 32px;
+      background: rgb(255 255 255 / 7%);
+      box-shadow: 0 30px 100px rgb(0 0 0 / 30%);
+      text-align: center;
+      backdrop-filter: blur(18px);
+      animation: arrive 900ms cubic-bezier(.2, .8, .2, 1) both;
+    }
+
+    .card::before {
+      position: absolute;
+      inset: 0 0 auto;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgb(255 255 255 / 70%), transparent);
+      content: "";
+    }
+
+    .sparkle {
+      display: inline-block;
+      margin-bottom: 1.1rem;
+      font-size: clamp(2rem, 6vw, 3rem);
+      animation: twinkle 2.8s ease-in-out infinite;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(3.5rem, 12vw, 7rem);
+      font-weight: 800;
+      letter-spacing: -0.075em;
+      line-height: 1;
+      background: linear-gradient(105deg, #fff 15%, #d9c8ff 48%, #ffb8d2 86%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      margin: 1.4rem 0 0;
+      color: rgb(255 255 255 / 72%);
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      letter-spacing: 0.02em;
+    }
+
+    @keyframes drift {
+      to { transform: translate(22vw, 14vh) scale(1.25); }
+    }
+
+    @keyframes arrive {
+      from { opacity: 0; transform: translateY(20px) scale(.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @keyframes twinkle {
+      50% { transform: rotate(18deg) scale(1.12); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+  <main class="card">
+    <span class="sparkle" aria-hidden="true">✦</span>
+    <h1>Hello!</h1>
+    <p>So lovely to see you here.</p>
+  </main>
+</body>
+</html>
